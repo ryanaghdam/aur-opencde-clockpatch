@@ -10,7 +10,7 @@ arch=('i686' 'x86_64')
 url='http://devio.us/~kpedersen/index.php'
 license=('BSD')
 depends=('openmotif')
-source=("http://devio.us/~kpedersen/releases/${pkgname}-${pkgver}.tar.gz" "https://github.com/ryanaghdam/aur-opencde-clockpatch/raw/master/opencde-0.4.4_timers_clock_cal.patch")
+source=("http://devio.us/~kpedersen/releases/opencde-${pkgver}.tar.gz" "https://github.com/ryanaghdam/aur-opencde-clockpatch/raw/master/opencde-0.4.4_timers_clock_cal.patch")
 md5sums=('bb229c55876aac3f95f7426c61b5b3cd'
          'd3808806a6443802c40131c8cabc9fb5')
 
