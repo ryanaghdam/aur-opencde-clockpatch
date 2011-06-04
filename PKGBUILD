@@ -2,7 +2,7 @@
 
 # Based on original package from Thomas Dziedzic.
 
-pkgname=opencde
+pkgname=opencde-clock_cal
 pkgver=0.4.4
 pkgrel=1
 pkgdesc="OpenCDE is a free implementation of the Open Group's Common Desktop Environment. Includes a patch for clock and calendar widgets."
@@ -16,6 +16,9 @@ md5sums=('bb229c55876aac3f95f7426c61b5b3cd'
 
 build() {
   cd ${pkgname}/src
+  cd ../
+  patch -p0 < ../opencde-0.4.4_timers_clock_cal.patch
+  cd src
 
   # fix build errors
   unset CFLAGS CXXFLAGS LDFLAGS
